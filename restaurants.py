@@ -114,7 +114,7 @@ def get_open_restaurants(csv_filename, search_datetime):
 
 if __name__ == '__main__':
     while True:
-        csv_file_name = raw_input("Please enter the csv file name(or press enter to use rest_hours.csv): ") or ""
+        csv_file_name = raw_input("Please enter the csv file name(or press enter to use rest_hours.csv): ")
         if csv_file_name == "":
             csv_file_name = "rest_hours.csv"
             break
