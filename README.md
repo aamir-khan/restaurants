@@ -18,4 +18,8 @@ get_open_restaurants(csv_file_name, current_date) # Returns list of restaurants 
 To run the restaurants module in an interactive mode.
 
     $ python restaurants.py
+    
+## Tests
+To run the tests:
 
+    $ python tests.py
