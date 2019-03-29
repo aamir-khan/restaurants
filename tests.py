@@ -26,7 +26,8 @@ class SimpleTest(unittest.TestCase):
         self.assertEqual(monday_opening_time, working_time_start)
         self.assertEqual(monday_closing_time, working_time_end)
         tuesday_week_day_number = 1
-        self.assertIsNone(schedule_days_map.get(tuesday_week_day_number), "The restaurant must be closed on Tuesday")
+        # Assert that the restaurant is closed on Tuesday.
+        self.assertIsNone(schedule_days_map.get(tuesday_week_day_number))
 
     def test_schedule_parsing_with_multiple_working_slot(self):
         schedule_str = "Mon 11:30 am - 10:30 pm / Tue 10:30 am - 10:30 pm"
